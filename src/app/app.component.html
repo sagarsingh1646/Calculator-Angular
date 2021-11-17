@@ -1,0 +1,65 @@
+<!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
+<!-- * * * * * * * * * * * The content below * * * * * * * * * * * -->
+<!-- * * * * * * * * * * is only a placeholder * * * * * * * * * * -->
+<!-- * * * * * * * * * * and can be replaced. * * * * * * * * * * * -->
+<!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
+<!-- * * * * * * * * * Delete the template below * * * * * * * * * * -->
+<!-- * * * * * * * to get started with your project! * * * * * * * * -->
+<!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
+<!DOCTYPE html>
+<html lang="en"> 
+
+<head>
+
+    <title>🧮 CALCULATOR 🧮</title>
+
+</head>
+
+<body>
+
+        <mat-toolbar color="primary">
+          
+              <mat-toolbar-row>
+                <span> MY CALCULATOR </span>
+                <span class="material-icons">verified_user</span>
+                <span class="example-spacer"></span>
+                <button class="button" onClick="window.location.reload()" mat-flat-button>Refresh</button>
+              </mat-toolbar-row>
+                
+            
+        </mat-toolbar>
+     
+      <mat-card><div style="text-align:center">
+        <h1>🧮 CALCULATOR 🧮</h1>
+        <input type="number" name="number1" [(ngModel)]="number1" placeholder="ENTER 1st NUMBER">
+        <input type="number" name="number2" [(ngModel)]="number2" placeholder="ENTER 2nd NUMBER">
+        <br>
+        <button (click)="add()">ADDITION </button>
+        <button (click)="sub()">SUBSTRACTION </button>
+        <button (click)="mul()">MULTIPLICATION </button>
+        <button (click)="div()">DIVISION </button>
+        <button (click)="fac()">FACTORIAL</button>
+        <button (click)="prime()">PRIME </button>
+        
+       
+
+        <br>
+        <h3>RESULT: {{number3}}</h3>
+        <h3>RESULT FOR PRIME : {{number4 ? "true" : "false"}}</h3>
+
+    </div></mat-card>
+    
+</body>
+
+</html>
+
+
+<!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
+<!-- * * * * * * * * * * * The content above * * * * * * * * * * * -->
+<!-- * * * * * * * * * * is only a placeholder * * * * * * * * * * -->
+<!-- * * * * * * * * * * and can be replaced. * * * * * * * * * * * -->
+<!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
+<!-- * * * * * * * * * * End of Placeholder * * * * * * * * * * * -->
+<!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
+
+<router-outlet></router-outlet>

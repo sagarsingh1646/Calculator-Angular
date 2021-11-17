@@ -1,0 +1,50 @@
+h1 {
+    color: rgb(29, 45, 54);
+    margin-top: auto;
+    text-align: center;
+}
+
+input {
+    font-size: 15px;
+    padding: 10px 5px;
+    margin: 5px 1px;
+    box-sizing: border-box;
+    border-radius: 10px;
+}
+p{
+    text-align: center;
+}
+
+button {
+    border: 0;
+    line-height: 2.5;
+    padding: 0 20px;
+    text-align: center;
+    color: #000000;
+    text-shadow: 1px 1px 1px #F0D9FF;
+    border-radius: 10px;
+    background-color: rgb(247, 32, 4);
+    font-size: 16px;
+    background-image: linear-gradient;
+    box-shadow: inset 2px 2px 3px rgba(255, 255, 255, .6),
+    inset -2px -2px 3px rgba(0, 0, 0, .6);
+}
+button:active {
+    box-shadow: inset -2px -2px 3px rgba(255, 255, 255, .6);
+  }
+
+button:hover {
+    background-color: rgb(121, 255, 139);
+}
+
+.button {
+    text-align: right;
+}
+body {
+    background-color: #F0D9FF;
+    border-radius: 10px;
+}
+.example-spacer {
+    flex: 1 1 auto;
+  }
+
